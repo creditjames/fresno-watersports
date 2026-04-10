@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => loader.classList.add('loaded'), 3000);
   }
 
+  // --- Announcement Banner Close ---
+  const annBanner = document.getElementById('announcement-banner');
+  const annClose = document.getElementById('announcement-close');
+  if (annBanner && annClose) {
+    if (sessionStorage.getItem('banner-closed')) {
+      annBanner.classList.add('hidden');
+    }
+    annClose.addEventListener('click', () => {
+      annBanner.classList.add('hidden');
+      sessionStorage.setItem('banner-closed', '1');
+    });
+  }
+
   // --- Navbar Scroll Effect ---
   const nav = document.querySelector('.nav');
   if (nav) {
