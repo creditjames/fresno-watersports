@@ -223,13 +223,7 @@ ul, ol { list-style: none; }
   color: #fff;
 }
 
-/* Push nav down when banner is visible */
-body:has(.announcement-banner:not(.hidden)) .nav {
-  top: 40px;
-}
-body:has(.announcement-banner:not(.hidden)) .mobile-menu {
-  top: calc(var(--nav-height) + 40px);
-}
+/* Banner offset is applied via --banner-h CSS variable set by JS */
 
 @media (max-width: 768px) {
   .announcement-banner {
@@ -242,12 +236,6 @@ body:has(.announcement-banner:not(.hidden)) .mobile-menu {
   .announcement-cta {
     font-size: 0.65rem;
     padding: 3px 10px;
-  }
-  body:has(.announcement-banner:not(.hidden)) .nav {
-    top: 52px;
-  }
-  body:has(.announcement-banner:not(.hidden)) .mobile-menu {
-    top: calc(var(--nav-height) + 52px);
   }
 }
 
@@ -274,7 +262,7 @@ body:has(.announcement-banner:not(.hidden)) .mobile-menu {
    ============================================ */
 .nav {
   position: fixed;
-  top: 0;
+  top: var(--banner-h, 0px);
   left: 0;
   right: 0;
   height: var(--nav-height);

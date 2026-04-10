@@ -14,16 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => loader.classList.add('loaded'), 3000);
   }
 
-  // --- Announcement Banner Close ---
+  // --- Announcement Banner ---
   const annBanner = document.getElementById('announcement-banner');
   const annClose = document.getElementById('announcement-close');
+  function updateBannerOffset() {
+    if (annBanner && !annBanner.classList.contains('hidden')) {
+      document.documentElement.style.setProperty('--banner-h', annBanner.offsetHeight + 'px');
+    } else {
+      document.documentElement.style.setProperty('--banner-h', '0px');
+    }
+  }
   if (annBanner && annClose) {
     if (sessionStorage.getItem('banner-closed')) {
       annBanner.classList.add('hidden');
     }
+    updateBannerOffset();
+    window.addEventListener('resize', updateBannerOffset);
     annClose.addEventListener('click', () => {
       annBanner.classList.add('hidden');
       sessionStorage.setItem('banner-closed', '1');
+      updateBannerOffset();
     });
   }
 
