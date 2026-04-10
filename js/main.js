@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Knowledge base
     const kb = {
       pricing: "Here's our pricing:\n\n🏍️ Jet Ski Bundles (pair of 2): $650 / all day\n🚤 Bayliner Element E21: $999 / all day\n\nAll rentals are full-day and include fuel, life jackets, and safety equipment!",
-      delivery: "Delivery options:\n\n📍 Pickup from us: FREE\n🌊 Millerton Lake: $150 (delivery & pickup)\n🏔️ Bass Lake & Shaver Lake: $300 (delivery & pickup)\n\nWe handle all the hauling — just show up and ride!",
+      delivery: "Delivery options:\n\n📍 Pickup from us: FREE\n🌊 Millerton Lake: $150 (delivery & pickup)\n🌲 Pine Flat Lake: $150 (delivery & pickup)\n🏔️ Bass Lake & Shaver Lake: $300 (delivery & pickup)\n\nWe handle all the hauling — just show up and ride!",
       lakes: "We serve 4 amazing lakes:\n\n🌊 Millerton Lake — Fresno's backyard lake, warm water, big coves\n⛰️ Pine Flat Lake — Crystal-clear foothill water\n🏔️ Shaver Lake — Mountain escape at 5,370 ft\n🌅 Bass Lake — Crown jewel of the Sierra\n\nDelivery available to all locations!",
       booking: "Booking is easy!\n\n1️⃣ Visit our Book Now page\n2️⃣ Pick your dates with the date picker\n3️⃣ Choose your watercraft\n4️⃣ Complete your reservation\n\nYou'll get instant confirmation. Questions? Call us at (559) 981-0180!",
       hours: "We offer all-day rentals. Peak season hours are typically 7 AM – 7 PM. Contact us for specific availability!",
