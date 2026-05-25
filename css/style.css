@@ -1594,26 +1594,6 @@ ul, ol { list-style: none; }
   line-height: 1.8;
   font-weight: 400;
 }
-.booqable-embed {
-  background: var(--bg-card);
-  border: var(--glass-border);
-  border-radius: 20px;
-  padding: 40px;
-  min-height: 300px;
-  position: relative;
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  box-shadow: var(--shadow-sm), var(--glass-highlight);
-}
-.booqable-embed::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  background: var(--glass-sheen);
-  pointer-events: none;
-}
-
 /* Bundle Grid */
 .bundle-grid {
   display: grid;
@@ -1621,9 +1601,24 @@ ul, ol { list-style: none; }
   gap: 28px;
 }
 .bundle-card {
-  min-height: auto;
+  background: var(--bg-card);
+  border: var(--glass-border);
+  border-radius: 20px;
   padding: 24px;
+  min-height: auto;
+  position: relative;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--shadow-sm), var(--glass-highlight);
   transition: all 0.5s var(--ease-out-expo);
+}
+.bundle-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: var(--glass-sheen);
+  pointer-events: none;
 }
 .bundle-card:hover {
   transform: translateY(-6px);
