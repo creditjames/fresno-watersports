@@ -15,20 +15,19 @@
   <link rel="apple-touch-icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
 
-  <script type="text/javascript">
-    (function(config) {
+  <script>
+    (function(config){
       window._peekConfig = config || {};
-      var idPrefix = 'peek-book-button';
-      var id = idPrefix+'-js'; if (document.getElementById(id)) return;
-      var head = document.getElementsByTagName('head')[0];
-      var el = document.createElement('script'); el.id = id;
-      var date = new Date; var stamp = date.getMonth()+"-"+date.getDate();
-      var basePath = "https://js.peek.com";
-      el.src = basePath + "/widget_button.js?ts="+stamp;
-      head.appendChild(el); id = idPrefix+'-css'; el = document.createElement('link'); el.id = id;
-      el.href = basePath + "/widget_button.css?ts="+stamp;
-      el.rel="stylesheet"; el.type="text/css"; head.appendChild(el);
-    })({key: 'a79ee083-26d3-4d66-bed6-1cc642fbab2b'});
+      var idPrefix='peek-book-button';
+      var id=idPrefix+'-js';
+      if(document.getElementById(id)) return;
+      var head=document.getElementsByTagName('head')[0];
+      var script=document.createElement('script');
+      script.type='text/javascript';
+      script.id=id;
+      script.src='https://js.peek.com/widget.js';
+      head.appendChild(script);
+    })({});
   </script>
 </head>
 <body>
@@ -85,41 +84,28 @@
           <p>Use the booking form below to reserve your boat or jet ski. Select your watercraft, preferred lake, date, and rental duration. You'll receive an instant confirmation with all the details you need for your lake day.</p>
         </div>
 
-        <!-- Our Rentals -->
-        <div style="margin-top:48px;">
-          <div class="section-header" style="margin-bottom:32px;">
-            <p class="section-label">Our Rentals</p>
-            <h2><span class="gradient-text">Choose Your Ride</span></h2>
+        <!-- Peek Booking Widgets -->
+        <div class="peek-widgets-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;margin-top:48px;">
+          <div class="bundle-card" style="padding:0;overflow:hidden;">
+            <div id="peek-widget-container-2" style="width:100%;max-width:100%;margin:0 auto;">
+              <iframe
+                id="peek-booking-frame-2"
+                src="https://book.peek.com/#/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/XWZNM"
+                style="width:100%;height:600px;border:none;border-radius:20px;"
+                allow="payment"
+                title="Peek Booking Widget 2">
+              </iframe>
+            </div>
           </div>
-          <div class="bundle-grid">
-            <div class="bundle-card">
-              <span class="fleet-card-badge badge-jetski" style="position:relative;display:inline-block;margin-bottom:12px;">Jet Ski Bundle</span>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$650</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bundle-card">
-              <span class="fleet-card-badge badge-jetski" style="position:relative;display:inline-block;margin-bottom:12px;">Jet Ski Bundle</span>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$650</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bundle-card">
-              <span class="fleet-card-badge badge-boat" style="position:relative;display:inline-block;margin-bottom:12px;">Boat</span>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$999</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-              </div>
+          <div class="bundle-card" style="padding:0;overflow:hidden;">
+            <div id="peek-widget-container-3" style="width:100%;max-width:100%;margin:0 auto;">
+              <iframe
+                id="peek-booking-frame-3"
+                src="https://book.peek.com/#/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/qjEgJ"
+                style="width:100%;height:600px;border:none;border-radius:20px;"
+                allow="payment"
+                title="Peek Booking Widget 3">
+              </iframe>
             </div>
           </div>
         </div>
@@ -299,6 +285,11 @@
         <button type="submit" class="chat-send">&#10148;</button>
       </form>
     </div>
+  </div>
+
+  <!-- Peek Floating Button -->
+  <div class="peek-floating-button">
+    <a href="https://book.peek.com/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/D0r3b" target="_blank" rel="noopener noreferrer">Book Now</a>
   </div>
 
   <script src="js/main.js"></script>

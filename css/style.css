@@ -2348,3 +2348,44 @@ ul, ol { list-style: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* --- Peek Floating Button --- */
+.peek-floating-button {
+  position: fixed;
+  right: 30px;
+  z-index: 9999;
+  animation: peekSlideIn 0.5s ease-out;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes peekSlideIn {
+  from { opacity: 0; transform: translateY(-50%) translateX(20px); }
+  to { opacity: 1; transform: translateY(-50%) translateX(0); }
+}
+.peek-floating-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #000000;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.peek-floating-button a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+.peek-floating-button a:active {
+  transform: scale(0.95);
+}
+@media (max-width: 768px) {
+  .peek-floating-button { right: 20px; }
+  .peek-floating-button a { padding: 10px 20px; font-size: 14px; }
+}
