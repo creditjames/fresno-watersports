@@ -2349,45 +2349,48 @@ ul, ol { list-style: none; }
   }
 }
 
-/* --- Peek Floating Button --- */
-.peek-floating-button {
-  position: fixed;
-  right: 30px;
-  z-index: 9999;
-  animation: peekSlideIn 0.5s ease-out;
-  top: 50%;
-  transform: translateY(-50%);
+/* --- Booking Widget Cards with Previews --- */
+.booking-widget-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
-@keyframes peekSlideIn {
-  from { opacity: 0; transform: translateY(-50%) translateX(20px); }
-  to { opacity: 1; transform: translateY(-50%) translateX(0); }
+.booking-preview {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(249, 83, 198, 0.1));
 }
-.peek-floating-button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #667eea, #764ba2, #f953c6);
+.booking-preview img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  display: block;
+  padding: 16px;
+}
+.booking-preview-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 20px;
+  background: linear-gradient(transparent, rgba(10, 5, 20, 0.85));
   color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 16px rgba(249, 83, 198, 0.4);
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-.peek-floating-button a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(249, 83, 198, 0.6);
-}
-.peek-floating-button a:active {
-  transform: scale(0.95);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 @media (max-width: 768px) {
-  .peek-floating-button { right: 20px; }
-  .peek-floating-button a { padding: 10px 20px; font-size: 14px; }
+  .booking-preview img {
+    height: 200px;
+    padding: 12px;
+  }
+  .booking-preview-label {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
 }
 
 /* --- Peek Widget Responsive --- */
@@ -2395,7 +2398,7 @@ ul, ol { list-style: none; }
   width: 100%;
   height: 750px;
   border: none;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
 }
 @media (max-width: 768px) {
   .peek-widget-frame {
