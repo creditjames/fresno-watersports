@@ -14,20 +14,7 @@
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="apple-touch-icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    (function(config){
-      window._peekConfig = config || {};
-      var idPrefix='peek-book-button';
-      var id=idPrefix+'-js';
-      if(document.getElementById(id)) return;
-      var head=document.getElementsByTagName('head')[0];
-      var script=document.createElement('script');
-      script.type='text/javascript';
-      script.id=id;
-      script.src='https://js.peek.com/widget.js';
-      head.appendChild(script);
-    })({});
-  </script>
+  <link rel="stylesheet" href="css/liquid-glass.css">
 </head>
 <body>
 
@@ -291,6 +278,9 @@
     </div>
   </div>
 
+  <script src="https://1c2677b3-d785-43d2-92d8-ee8fffdf70da.assets.booqable.com/v2/booqable.js"></script>
+
   <script src="js/main.js"></script>
+  <script src="js/liquid-glass.js"></script>
 </body>
 </html>

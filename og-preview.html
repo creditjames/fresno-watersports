@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>OG Preview — Screenshot This</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: 'Exo 2', sans-serif;
+    }
+
+    .card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      background: linear-gradient(135deg, #0f0520 0%, #1a0a2e 30%, #2d1155 60%, #1a0a2e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Glow orbs */
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.5;
+    }
+    .glow-pink {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(249,83,198,0.5), transparent 70%);
+      top: -100px;
+      right: -80px;
+    }
+    .glow-blue {
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(102,126,234,0.5), transparent 70%);
+      bottom: -120px;
+      left: -60px;
+    }
+    .glow-purple {
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(118,75,162,0.4), transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Wave at bottom */
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+    }
+    .wave svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Content */
+    .content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      color: #fff;
+      padding: 0 80px;
+    }
+
+    .logo {
+      height: 110px;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 4px 20px rgba(249,83,198,0.3));
+    }
+
+    .tagline {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      background: linear-gradient(90deg, #667eea, #764ba2, #f953c6, #ff2d78);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.5;
+      max-width: 700px;
+      margin: 0 auto 28px;
+    }
+
+    .info-pills {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.5px;
+    }
+
+    .pill strong {
+      color: #f953c6;
+    }
+
+    /* Corner accent */
+    .corner-accent {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgba(249,83,198,0.15);
+      border-radius: 20px;
+      transform: rotate(45deg);
+    }
+    .corner-accent-1 {
+      top: -80px;
+      left: -80px;
+    }
+    .corner-accent-2 {
+      bottom: -80px;
+      right: -80px;
+    }
+
+    .instructions {
+      position: fixed;
+      top: 640px;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: #1a1a2e;
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.8;
+    }
+    .instructions strong { color: #f953c6; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Glows -->
+    <div class="glow glow-pink"></div>
+    <div class="glow glow-blue"></div>
+    <div class="glow glow-purple"></div>
+
+    <!-- Corner accents -->
+    <div class="corner-accent corner-accent-1"></div>
+    <div class="corner-accent corner-accent-2"></div>
+
+    <!-- Wave -->
+    <div class="wave">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C200,80 400,10 600,50 C800,90 1000,20 1200,40 L1200,120 L0,120 Z" fill="rgba(249,83,198,0.08)"/>
+        <path d="M0,70 C300,40 600,90 900,60 C1050,45 1150,75 1200,70 L1200,120 L0,120 Z" fill="rgba(102,126,234,0.06)"/>
+      </svg>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <img src="images/logo.png" alt="Fresno Watersports" class="logo">
+      <p class="tagline">Central California's Premier Rental Experience</p>
+      <h1 class="title">Boat & Jet Ski Rentals</h1>
+      <p class="subtitle">Premium watercraft delivered to Millerton, Bass, Shaver & Pine Flat Lake. Book online today.</p>
+      <div class="info-pills">
+        <span class="pill">2 Jet Skis <strong>$600/day</strong></span>
+        <span class="pill">Boats <strong>$799/day</strong></span>
+        <span class="pill">Delivery to All 4 Lakes</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <strong>How to screenshot this:</strong><br>
+    1. Open Chrome DevTools (F12) &rarr; Toggle Device Toolbar (Ctrl+Shift+M)<br>
+    2. Set dimensions to <strong>1200 x 630</strong> &rarr; Set zoom to 100%<br>
+    3. Right-click the card &rarr; "Capture node screenshot" &mdash; or use Ctrl+Shift+P &rarr; "Capture screenshot"<br>
+    4. Save as <strong>og-image.png</strong> in the <strong>images/</strong> folder &mdash; then I'll wire it up across all pages.
+  </div>
+
+</body>
+</html>

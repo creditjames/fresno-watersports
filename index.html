@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fresno Watersports — Boat & Jet Ski Rentals | Millerton, Bass, Shaver & Pine Flat Lake</title>
-  <meta name="description" content="Central California's #1 boat & jet ski rental company. Kawasaki & Sea-Doo jet ski bundles from $650/day, Bayliner boats from $999/day. Free pickup or lake delivery to Millerton, Bass Lake, Shaver Lake & Pine Flat. Book online today!">
-  <meta name="keywords" content="jet ski rental Fresno, boat rental Millerton Lake, Bass Lake jet ski, Shaver Lake boat rental, Fresno Watersports, Kawasaki jet ski rental, Sea-Doo rental, Bayliner boat rental, lake delivery Central California">
+  <meta name="description" content="Jet ski & boat rentals in Fresno! 2 jet skis $600/day, boats $799/day. Delivery & pickup to Millerton, Pine Flat, Bass Lake & Shaver Lake. Prepaid fuel available. Book online today!">
+  <meta name="keywords" content="jet ski rental Fresno, boat rental Millerton Lake, jet ski rental Central California, $600 jet ski rental, boat rental Central California, Bass Lake jet ski, Shaver Lake boat rental, Fresno Watersports, Kawasaki jet ski rental, Sea-Doo rental, Bayliner boat rental, Millerton Lake delivery, lake delivery Central California">
   <meta name="author" content="Fresno Watersports">
   <meta name="theme-color" content="#f953c6">
 
   <!-- Open Graph / Facebook / iMessage -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fresno Watersports — Boat & Jet Ski Rentals">
-  <meta property="og:description" content="Central California's #1 boat & jet ski rental. Jet ski bundles from $650/day, boats from $999/day. Free pickup or delivery to Millerton, Bass, Shaver & Pine Flat Lake.">
+  <meta property="og:description" content="2 jet skis $600/day, boats $799/day. Delivery to Millerton, Pine Flat, Bass & Shaver Lake. Prepaid fuel available.">
   <meta property="og:image" content="images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fresno Watersports — Boat & Jet Ski Rentals">
-  <meta name="twitter:description" content="Jet ski bundles from $650/day, boats from $999/day. Lake delivery available. Book online!">
+  <meta name="twitter:description" content="2 jet skis $600/day, boats $799/day. Delivery to all 4 lakes. Prepaid fuel available. Book online!">
   <meta name="twitter:image" content="images/og-image.png">
 
   <!-- Favicon & App Icons -->
@@ -32,6 +32,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/liquid-glass.css">
 
   <!-- Schema.org Local Business -->
   <script type="application/ld+json">
@@ -45,7 +46,7 @@
     "email": "fresnowatersports@gmail.com",
     "image": "https://fresnowatersports.com/images/logo.png",
     "logo": "https://fresnowatersports.com/images/logo.png",
-    "priceRange": "$650 - $999",
+    "priceRange": "$600 - $799",
     "currenciesAccepted": "USD",
     "address": {
       "@type": "PostalAddress",
@@ -77,16 +78,16 @@
         {
           "@type": "Offer",
           "itemOffered": { "@type": "Product", "name": "Jet Ski Bundle (2 Jet Skis)" },
-          "price": "650",
+          "price": "600",
           "priceCurrency": "USD",
-          "description": "All-day rental of 2 jet skis with fuel, life jackets, and safety equipment"
+          "description": "All-day rental of 2 jet skis with life jackets and safety equipment. Delivery available to Millerton ($150), Pine Flat ($200), Bass Lake and Shaver Lake ($300). Prepaid fuel available for $65 per jet ski."
         },
         {
           "@type": "Offer",
           "itemOffered": { "@type": "Product", "name": "Bayliner Element E21 Boat" },
-          "price": "999",
+          "price": "799",
           "priceCurrency": "USD",
-          "description": "All-day boat rental with fuel, life jackets, and safety equipment"
+          "description": "All-day boat rental with life jackets and safety equipment. Delivery available to Millerton ($150), Pine Flat ($200), Bass Lake and Shaver Lake ($300). Prepaid fuel available for $150."
         }
       ]
     },
@@ -100,27 +101,13 @@
   }
   </script>
 
-  <script>
-    (function(config){
-      window._peekConfig = config || {};
-      var idPrefix='peek-book-button';
-      var id=idPrefix+'-js';
-      if(document.getElementById(id)) return;
-      var head=document.getElementsByTagName('head')[0];
-      var script=document.createElement('script');
-      script.type='text/javascript';
-      script.id=id;
-      script.src='https://js.peek.com/widget.js';
-      head.appendChild(script);
-    })({});
-  </script>
 </head>
 <body>
 
   <!-- Weekday Deals Banner -->
   <div class="announcement-banner" id="announcement-banner">
     <div class="announcement-inner">
-      <span class="announcement-text">&#127754; <strong>Weekday Deals:</strong> Save <strong>$100</strong> on Jet Skis &amp; <strong>$200</strong> on Boats — Mon through Fri!</span>
+      <span class="announcement-text">&#127754; <strong>All-Day Rentals!</strong> 2 Jet Skis <strong>$600</strong> &amp; Boats <strong>$799</strong> — Delivery to All <strong>4 Lakes</strong>!</span>
       <a href="booking.html" class="announcement-cta">Book Now</a>
       <button class="announcement-close" id="announcement-close" aria-label="Close banner">&times;</button>
     </div>
@@ -294,31 +281,50 @@
         <div class="section-divider"></div>
       </div>
 
-      <!-- Peek Booking Widgets -->
-      <div class="reveal" style="display:flex;flex-direction:column;gap:32px;">
-        <div style="width:100%;margin:0 auto;">
-          <iframe
-            src="https://book.peek.com/#/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/KRq4D"
-            class="peek-widget-frame"
-            allow="payment"
-            title="Peek Booking — Kawasaki Jet Ski">
-          </iframe>
+      <!-- Booqable Date Picker -->
+      <div class="booqable-embed reveal" id="booqable-dates">
+        <h3 style="font-family:var(--font-display);font-size:0.9rem;font-weight:700;letter-spacing:1px;margin-bottom:20px;text-align:center;">
+          Select Your <span class="gradient-text">Dates</span>
+        </h3>
+        <div class="booqable-datepicker"></div>
+      </div>
+
+      <!-- Booqable Product Cards -->
+      <div class="bundle-grid reveal" style="margin-top:32px;">
+        <div class="booqable-embed bundle-card">
+          <span class="fleet-card-badge badge-jetski" style="position:relative;display:inline-block;margin-bottom:12px;">Jet Ski Bundle</span>
+          <div class="booqable-product" data-id="2-jetski-bundle-2025-kawasaki-160-stx"></div>
+          <div class="fleet-card-pricing" style="margin-top:16px;">
+            <div class="price">
+              <span class="price-amount">$600</span>
+              <span class="price-period"> / all day</span>
+            </div>
+            <div class="booqable-product-button" data-id="2-jetski-bundle-2025-kawasaki-160-stx"></div>
+          </div>
         </div>
-        <div style="width:100%;margin:0 auto;">
-          <iframe
-            src="https://book.peek.com/#/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/XWZNM"
-            class="peek-widget-frame"
-            allow="payment"
-            title="Peek Booking — Sea-Doo Spark">
-          </iframe>
+
+        <div class="booqable-embed bundle-card">
+          <span class="fleet-card-badge badge-jetski" style="position:relative;display:inline-block;margin-bottom:12px;">Jet Ski Bundle</span>
+          <div class="booqable-product" data-id="2-jetski-bundle"></div>
+          <div class="fleet-card-pricing" style="margin-top:16px;">
+            <div class="price">
+              <span class="price-amount">$600</span>
+              <span class="price-period"> / all day</span>
+            </div>
+            <div class="booqable-product-button" data-id="2-jetski-bundle"></div>
+          </div>
         </div>
-        <div style="width:100%;margin:0 auto;">
-          <iframe
-            src="https://book.peek.com/#/s/a79ee083-26d3-4d66-bed6-1cc642fbab2b/qjEgJ"
-            class="peek-widget-frame"
-            allow="payment"
-            title="Peek Booking — Bayliner Boat">
-          </iframe>
+
+        <div class="booqable-embed bundle-card">
+          <span class="fleet-card-badge badge-boat" style="position:relative;display:inline-block;margin-bottom:12px;">Boat</span>
+          <div class="booqable-product" data-id="bayliner-element-e21-2026"></div>
+          <div class="fleet-card-pricing" style="margin-top:16px;">
+            <div class="price">
+              <span class="price-amount">$799</span>
+              <span class="price-period"> / all day</span>
+            </div>
+            <div class="booqable-product-button" data-id="bayliner-element-e21-2026"></div>
+          </div>
         </div>
       </div>
 
@@ -343,7 +349,7 @@
           <div class="delivery-card">
             <div class="delivery-icon">&#127795;</div>
             <h4>Pine Flat Lake</h4>
-            <p class="delivery-price">$150</p>
+            <p class="delivery-price">$200</p>
             <p class="delivery-desc">Delivery &amp; pickup included</p>
           </div>
           <div class="delivery-card">
@@ -351,6 +357,27 @@
             <h4>Bass Lake &amp; Shaver Lake</h4>
             <p class="delivery-price">$300</p>
             <p class="delivery-desc">Delivery &amp; pickup included</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional Add-Ons -->
+      <div class="delivery-info reveal" style="margin-top:48px;">
+        <div class="section-header" style="margin-bottom:24px;">
+          <p class="section-label">Optional Add-Ons</p>
+        </div>
+        <div class="delivery-grid">
+          <div class="delivery-card">
+            <div class="delivery-icon">&#9981;</div>
+            <h4>Prepaid Fuel — Jet Ski</h4>
+            <p class="delivery-price">$65</p>
+            <p class="delivery-desc">Per jet ski — return it without refueling</p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">&#9981;</div>
+            <h4>Prepaid Fuel — Boat</h4>
+            <p class="delivery-price">$150</p>
+            <p class="delivery-desc">Return it without refueling</p>
           </div>
         </div>
       </div>
@@ -488,7 +515,16 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p class="faq-answer-inner">Yes! Pickup from our location is always free. Delivery to Millerton Lake is $150 (includes pickup &amp; delivery). Delivery to Pine Flat Lake is $150 (includes pickup &amp; delivery). Delivery to Bass Lake and Shaver Lake is $300 (includes pickup &amp; delivery).</p>
+            <p class="faq-answer-inner">Yes! Pickup from our location is always free. Delivery to Millerton Lake is $150, Pine Flat Lake is $200, and Bass Lake or Shaver Lake is $300. Every delivery price includes both drop-off and pickup — we handle all the hauling.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How does fuel work?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">You can either return your watercraft refueled, or prepay for fuel and skip the gas stop entirely. Prepaid fuel is $65 per jet ski and $150 for the boat — just add it when you book.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -689,6 +725,9 @@
     </div>
   </div>
 
+  <script src="https://1c2677b3-d785-43d2-92d8-ee8fffdf70da.assets.booqable.com/v2/booqable.js"></script>
+
   <script src="js/main.js"></script>
+  <script src="js/liquid-glass.js"></script>
 </body>
 </html>
