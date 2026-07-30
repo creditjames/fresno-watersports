@@ -202,6 +202,25 @@
   }
 }
 
+/* ---- 6b. SplashBooq dedicated booking blocks ---- */
+.sb-book-block { margin-bottom: 56px; }
+.sb-book-block:last-child { margin-bottom: 0; }
+.sb-book-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+  color: var(--text-primary);
+}
+.sb-book-title span {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 0;
+}
+
 /* ---- 7. Respect user preferences & weaker devices ---- */
 @media (prefers-reduced-motion: reduce) {
   .hero-caustics, .hero-rays { animation: none; }

@@ -58,7 +58,7 @@
       pills.className = 'hero-pills';
       pills.innerHTML =
         pill('$600', '2 Jet Skis / Day') +
-        pill('$799', 'Boat / Day') +
+        pill('$800', 'Boat / Day') +
         pill('4 Lakes', 'Delivery Available');
       if (actions && actions.nextSibling) {
         content.insertBefore(pills, actions.nextSibling);

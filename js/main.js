@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Knowledge base
     const kb = {
-      pricing: "Here's our pricing:\n\n🏍️ Jet Ski Bundles (pair of 2): $600 / all day\n🚤 Bayliner Element E21: $799 / all day\n\nAll rentals are full-day and include life jackets and safety equipment. Prepaid fuel is available as an add-on ($65 per jet ski, $150 for the boat), and we deliver to all 4 lakes!",
+      pricing: "Here's our pricing:\n\n🏍️ Jet Ski Bundles (pair of 2): $600 / all day\n🚤 Bayliner Element E21: $800 / all day\n\nAll rentals are full-day and include life jackets and safety equipment. Prepaid fuel is available as an add-on ($65 per jet ski, $150 for the boat), and we deliver to all 4 lakes!",
       delivery: "Delivery options:\n\n📍 Pickup from us: FREE\n🌊 Millerton Lake: $150 (delivery & pickup)\n🌲 Pine Flat Lake: $200 (delivery & pickup)\n🏔️ Bass Lake & Shaver Lake: $300 (delivery & pickup)\n\nEvery delivery price covers both drop-off and pickup — we handle all the hauling, just show up and ride!",
       fuel: "You can return your watercraft refueled, or prepay for fuel and skip the gas stop:\n\n⛽ Jet Ski: $65 each\n⛽ Boat: $150\n\nJust add it when you book!",
       lakes: "We serve 4 amazing lakes:\n\n🌊 Millerton Lake — Fresno's backyard lake, warm water, big coves\n⛰️ Pine Flat Lake — Crystal-clear foothill water\n🏔️ Shaver Lake — Mountain escape at 5,370 ft\n🌅 Bass Lake — Crown jewel of the Sierra\n\nDelivery available to all locations!",
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
       review: "Leave a 5-star Google review and get $25 off your next rental! Just send us a screenshot of your review and we'll send you a discount code. 🌟",
       kawasaki: "Our Kawasaki STX 160 bundle comes with 2 jet skis for $600 / all day. Delivery available to all 4 lakes. Perfect for racing your friends! 🏍️",
       seadoo: "Our Sea-Doo Spark bundle comes with 2 jet skis for $600 / all day. Delivery available to all 4 lakes. Fun, lightweight, and perfect for all riders!",
-      bayliner: "The 2026 Bayliner Element E21 is available for $799 / all day. Delivery available to all 4 lakes. A premium 21ft boat perfect for families and groups. Fits up to 8 passengers!",
+      bayliner: "The 2026 Bayliner Element E21 is available for $800 / all day. Delivery available to all 4 lakes. A premium 21ft boat perfect for families and groups. Fits up to 8 passengers!",
       bring: "Bring sunscreen, towels, water, snacks, and a valid photo ID. We provide life jackets for all passengers. Wear clothes you don't mind getting wet!",
     };
 

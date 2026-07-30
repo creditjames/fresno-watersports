@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Now — Fresno Watersports | Reserve Your Boat or Jet Ski Online</title>
-  <meta name="description" content="Book jet ski & boat rentals in Fresno! 2 jet skis $600/day, boats $799/day. Delivery to all 4 lakes. Prepaid fuel available. Reserve online instantly.">
+  <meta name="description" content="Book jet ski & boat rentals in Fresno! 2 jet skis $600/day, boats $800/day. Delivery to all 4 lakes. Prepaid fuel available. Reserve online instantly.">
   <meta name="theme-color" content="#f953c6">
   <meta property="og:title" content="Book Now — Fresno Watersports">
-  <meta property="og:description" content="2 jet skis $600/day, boats $799/day. Delivery to all 4 lakes. Reserve online instantly.">
+  <meta property="og:description" content="2 jet skis $600/day, boats $800/day. Delivery to all 4 lakes. Reserve online instantly.">
   <meta property="og:image" content="images/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="images/og-image.png">
@@ -16,13 +16,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/liquid-glass.css">
 
+  <!-- SplashBooq booking widget -->
+  <script src="https://www.splashbooq.com/embed.js"
+          data-key="pk_live_l1S4WStM-RCCm6PzpYhpow" defer></script>
 </head>
 <body>
 
   <!-- Weekday Deals Banner -->
   <div class="announcement-banner" id="announcement-banner">
     <div class="announcement-inner">
-      <span class="announcement-text">&#127754; <strong>All-Day Rentals!</strong> 2 Jet Skis <strong>$600</strong> &amp; Boats <strong>$799</strong> — Delivery to All <strong>4 Lakes</strong>!</span>
+      <span class="announcement-text">&#127754; <strong>All-Day Rentals!</strong> 2 Jet Skis <strong>$600</strong> &amp; Boats <strong>$800</strong> — Delivery to All <strong>4 Lakes</strong>!</span>
       <a href="booking.html" class="announcement-cta">Book Now</a>
       <button class="announcement-close" id="announcement-close" aria-label="Close banner">&times;</button>
     </div>
@@ -71,71 +74,38 @@
           <p>Use the booking form below to reserve your boat or jet ski. Select your watercraft, preferred lake, date, and rental duration. You'll receive an instant confirmation with all the details you need for your lake day.</p>
         </div>
 
-        <!-- Booqable Date Picker -->
-        <div class="booqable-embed" id="booqable-dates">
-          <h3 style="font-family:var(--font-display);font-size:0.9rem;font-weight:700;letter-spacing:1px;margin-bottom:20px;text-align:center;">
-            Select Your <span class="gradient-text">Dates</span>
-          </h3>
-          <div class="booqable-datepicker"></div>
-        </div>
+        <!-- SplashBooq: dedicated always-visible booking widget per headline
+             product. CSS custom properties pierce the widget's shadow DOM to
+             match the site's synthwave palette. -->
+        <div class="sb-embed" style="
+            --sb-accent:#f953c6;
+            --sb-font:'Exo 2', sans-serif;
+            --sb-radius:20px;
+            --sb-text:#1a1a2e;">
 
-        <!-- Booqable Booking Widgets -->
-        <div style="display:flex;flex-direction:column;gap:48px;margin-top:48px;">
-
-          <!-- Kawasaki STX 160 Bundle -->
-          <div class="booking-widget-card">
-            <div class="booking-preview">
-              <img src="images/kawasaki-stx-160.png" alt="2025 Kawasaki STX 160 Jet Ski Bundle" loading="lazy">
-              <div class="booking-preview-label">2025 Kawasaki STX 160 Bundle</div>
-            </div>
-            <div class="booqable-embed" style="width:100%;margin:0 auto;">
-              <div class="booqable-product" data-id="2-jetski-bundle-2025-kawasaki-160-stx"></div>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$600</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-                <div class="booqable-product-button" data-id="2-jetski-bundle-2025-kawasaki-160-stx"></div>
-              </div>
-            </div>
+          <div class="section-header" style="margin-bottom:32px;">
+            <p class="section-label">Choose Your Ride</p>
           </div>
 
-          <!-- Sea-Doo Spark 2026 Bundle -->
-          <div class="booking-widget-card">
-            <div class="booking-preview">
-              <img src="images/seadoo-spark.png" alt="Sea-Doo Spark 2026 Jet Ski Bundle" loading="lazy">
-              <div class="booking-preview-label">Sea-Doo Spark 2026 Bundle</div>
-            </div>
-            <div class="booqable-embed" style="width:100%;margin:0 auto;">
-              <div class="booqable-product" data-id="2-jetski-bundle"></div>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$600</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-                <div class="booqable-product-button" data-id="2-jetski-bundle"></div>
-              </div>
-            </div>
+          <div class="sb-book-block">
+            <h3 class="sb-book-title">2024 Kawasaki STX 160 Bundle <span>· 2 Jet Skis · $600 / day</span></h3>
+            <div class="sb-booking" data-product="2024-kawasaki-stx-160-3-seater-bundle"></div>
           </div>
 
-          <!-- Bayliner Element E21 -->
-          <div class="booking-widget-card">
-            <div class="booking-preview">
-              <img src="images/bayliner-e21.jpg" alt="Bayliner Element E21 Boat" loading="lazy">
-              <div class="booking-preview-label">Bayliner Element E21 (2026)</div>
-            </div>
-            <div class="booqable-embed" style="width:100%;margin:0 auto;">
-              <div class="booqable-product" data-id="bayliner-element-e21-2026"></div>
-              <div class="fleet-card-pricing" style="margin-top:16px;">
-                <div class="price">
-                  <span class="price-amount">$799</span>
-                  <span class="price-period"> / all day</span>
-                </div>
-                <div class="booqable-product-button" data-id="bayliner-element-e21-2026"></div>
-              </div>
-            </div>
+          <div class="sb-book-block">
+            <h3 class="sb-book-title">2026 Sea-Doo Spark Bundle <span>· 2 Jet Skis · $600 / day</span></h3>
+            <div class="sb-booking" data-product="seadoo-spark-bundle"></div>
           </div>
 
+          <div class="sb-book-block">
+            <h3 class="sb-book-title">2026 Bayliner Element 10-Seater <span>· Boat · $800 / day</span></h3>
+            <div class="sb-booking" data-product="2026-bayliner-element-10-seater"></div>
+          </div>
+
+          <p style="text-align:center;margin-top:8px;color:var(--text-secondary);">
+            Looking for a single jet ski or want to compare everything?
+            <a href="fleet.html" style="color:var(--pink);font-weight:600;">Browse the full fleet &rarr;</a>
+          </p>
         </div>
 
         <!-- Delivery Pricing -->
@@ -335,8 +305,6 @@
       </form>
     </div>
   </div>
-
-<script src="https://1c2677b3-d785-43d2-92d8-ee8fffdf70da.assets.booqable.com/v2/booqable.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/liquid-glass.js"></script>
